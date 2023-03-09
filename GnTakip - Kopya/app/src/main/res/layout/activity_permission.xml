@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Permission">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/min"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="193dp"
+        android:text="-"
+        android:src="@drawable/purple"
+        android:backgroundTint="#B79A9A"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="#B79A9A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/requestedRestDay">
+
+    </Button>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="193dp"
+        android:text="+"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="#B79A9A"
+        android:textSize="18sp"
+        android:src="@drawable/purple"
+        android:backgroundTint="#B79A9A"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintStart_toStartOf="@id/requestedRestDay"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/approval"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="140dp"
+        android:text="Onayla"
+        android:src="@drawable/purple"
+        android:backgroundTint="#B79A9A"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="#B79A9A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="355dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:hint="İzin sebebiniz"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="248dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="188dp"
+        android:text="KALAN İZİN GÜNÜNÜZ:"
+        android:textColor="#222934"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/remainingRestDay"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#222934"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/purple"
+        app:layout_constraintTop_toBottomOf="@id/edit"
+        />
+
+    <EditText
+        android:id="@+id/requestedRestDay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

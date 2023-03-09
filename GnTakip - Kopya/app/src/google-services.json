@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "281197147169",
+    "project_id": "guntakip-3cea0",
+    "storage_bucket": "guntakip-3cea0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281197147169:android:8481e78c8dab224cf79f60",
+        "android_client_info": {
+          "package_name": "com.example.gntakip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281197147169-nfj7683l8qn3pvf6kjjeiogknel1nn8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkRKVgY28U34Gno79E5sNIhwI_c1uUMAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281197147169-nfj7683l8qn3pvf6kjjeiogknel1nn8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
